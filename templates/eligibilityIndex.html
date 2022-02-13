@@ -6,8 +6,22 @@ html file for the Home page.-->
 {% block content %}
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}"> <!--imports the css file, gives text style-->
     <title>NaturalizeMe!</title>
+    <style>
+        input {
+            background-color: #05386b;
+            border: none;
+            color: #F9FFFE;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 24px;
+            border-radius: 8px;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <br>
@@ -21,7 +35,10 @@ html file for the Home page.-->
     <h1>Immigration Eligibility Calculator</h1>
     <p2>Answer the following questions to the best of your knowledge.
         To allow us to best aid you with your naturalization endeavor, it's best that you answer honestly.</p2>
-    <p3>Access the <strong>Eligibility Calculator</strong> <a href="http://127.0.0.1:5000/calcPage1">here</a>.</p3>
-    <br>
+    <p3>Access the <strong>Eligibility Calculator</strong> below.</p3>
+    <br><br>
+    <form action="/eligibility" method="post">
+        <input type="submit"  id="button1"  value="Begin Eligibility Test" name="begin">
+    </form>
 </body>
 {% endblock %}

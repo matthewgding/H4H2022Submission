@@ -6,15 +6,10 @@ html file for the Home page.-->
 {% block content %}
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
     <title>NaturalizeMe!</title>
 </head>
-    <h1>{% block title %} Welcome to <strong>NaturalizeMe!</strong> {% endblock %}</h1> <!---->
-    <p1><strong>NaturalizeMe</strong> is a free-to-use website designed to simplify the convoluted process of applying for citizenship by naturalization
+    <h1 style="text-align: center;">Welcome to <strong>{% block title %}NaturalizeMe! {% endblock %}</strong></h1> <!---->
+    <p1 style="text-align: center;"><strong>NaturalizeMe</strong> is a free-to-use website designed to simplify the convoluted process of applying for citizenship by naturalization
         in the United States. Our team has designed this site with “ease of use” in mind, with a built-in eligibility calculator that determines
         your naturalization eligibility and redirects you accordingly to the section of <strong>NaturalizeMe</strong> most relevant to your situation. </p1> <!--<strong> bolds captured words.-->
-    <br><br>
-    <form action="/homeIndex" method="post">
-        <input type="submit"  id="button1"  value="Begin Eligibility Test">
-    </form>
 {% endblock %}
