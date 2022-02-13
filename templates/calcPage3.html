@@ -1,0 +1,37 @@
+<!-- Implemented by Matthew Ding -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Citizenship Eligibility Calculator</title>
+</head>
+<body>
+    <!-- Create radio buttons to allow a user to confirm their status for each requirement -->
+    <form action="/calcPage3" method="post" style="text-align: center;">
+        <p>In the past five years, have you lived outside the United States for more than 30 months?</p>
+        <label><input type="radio" name="inCountry" value="yes"/>Yes</label>
+        <label><input type="radio" name="inCountry" value="no"/>No</label>
+
+        <p>In the past five years, have you gone on a trip that lasted more than 1 year?</p>
+        <label><input type="radio" name="noTrip" value="yes"/>Yes</label>
+        <label><input type="radio" name="noTrip" value="no"/>No</label>
+
+        <p>Have you lived in the district/state you are applying to get citizenship in for the last three months?</p>
+        <label><input type="radio" name="livedState" value="yes"/>Yes</label>
+        <label><input type="radio" name="livedState" value="no"/>No</label>
+
+        <p>Can you read, write, and speak basic English?</p>
+        <label><input type="radio" name="knowEng" value="yes"/>Yes</label>
+        <label><input type="radio" name="knowEng" value="no"/>No</label>
+
+        <p>Do you have a basic understanding of U.S. history and the U.S. government?</p>
+        <label><input type="radio" name="knowHistGov" value="yes"/>Yes</label>
+        <label><input type="radio" name="knowHistGov" value="no"/>No</label>
+
+        <!-- Button to submit all choices for this page -->
+        <p></p>
+        <input type="submit" id="button1" name="next" value="Next">
+    </form>
+</body>
+</html>

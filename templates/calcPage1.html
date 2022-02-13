@@ -1,0 +1,32 @@
+<!-- Implemented by Matthew Ding -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Citizenship Eligibility Calculator</title>
+</head>
+<body>
+    <h1>Citizenship Eligibility Calculator</h1>
+    <!-- Create radio buttons to allow a user to confirm their status for each requirement -->
+    <form action="/calcPage1" method="post" style="text-align: center;">
+
+        <p>Are you at least 18 years old?</p>
+        <label><input type="radio" name="over18" value="yes"/>Yes</label>
+        <label><input type="radio" name="over18" value="no"/>No</label>
+
+        <p>Are you a permanent resident of the United States with a Permanent Resident Card?</p>
+        <label><input type="radio" name="permRes" value="yes" >Yes</label>
+        <label><input type="radio" name="permRes" value="no">No</label>
+
+        <p>If yes, how long have you been a permanent resident in the United States?</p>
+        <label><input type="radio" name="resLength" value="under3">Under 3 years</label>
+        <label><input type="radio" name="resLength" value="over3">Between 3 to 5 years</label>
+        <label><input type="radio" name="resLength" value="over5">Over 5 years</label>
+
+        <!-- Button to submit all choices for this page -->
+        <p></p>
+        <input type="submit" id="button1" name="next" value="Next">
+    </form>
+</body>
+</html>

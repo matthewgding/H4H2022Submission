@@ -1,0 +1,30 @@
+<!-- Implemented by Edmund Allen -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Citizenship Eligibility Calculator</title>
+</head>
+<body>
+    <h2>Since you were out of the country for 30 months or more, you must meet any of the following conditions:</h2>
+    <!-- Create radio buttons to allow a user to confirm their status for each requirement -->
+    <form action="/attachmentB" method="post" style="text-align: center;">
+        <p>I am a person who has served on board a vessel operated by or registered in the United States.</p>
+        <label><input type="radio" name="marinerStatus" value="yes"/>True</label>
+        <label><input type="radio" name="marinerStatus" value="no"/>False</label>
+
+        <p>I am an employee or an individual under contract to the U.S. Government.</p>
+        <label><input type="radio" name="govWorker" value="yes"/>True</label>
+        <label><input type="radio" name="govWorker" value="no"/>False</label>
+
+        <p>I am a person who performs priestly functions for a religious denomination in the United States.</p>
+        <label><input type="radio" name="priestHood" value="yes"/>True</label>
+        <label><input type="radio" name="priestHood" value="no"/>False</label>
+
+        <!-- Submit button -->
+        <p></p>
+        <input type="submit" id="button1" name="next" value="Next">
+    </form>
+</body>
+</html>

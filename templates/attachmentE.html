@@ -1,0 +1,23 @@
+<!-- Implemented by Edmund Allen -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Citizenship Eligibility Calculator</title>
+</head>
+<body>
+    <h2>Since you have a disability that prevents you from fulfilling the civic requirement, do you qualify for the following exception?</h2>
+    <!-- Create radio buttons to allow a user to confirm their status for each requirement -->
+    <form action="/attachmentE" method="post" style="text-align: center;">
+        <p>Do you have a filed disability under "Medical Certification for Disability Exceptions"
+            <a href="https://www.uscis.gov/sites/default/files/document/forms/n-470instr.pdf" target="_blank">Form N-648</a>?</p> <!-- Embedded hyperlink to government form -->
+        <label><input type="radio" name="civicDisability" value="yes"/>Yes</label>
+        <label><input type="radio" name="civicDisability" value="no"/>No</label>
+
+        <!-- Submit button -->
+        <p></p>
+        <input type="submit" id="button1" name="next" value="Next">
+    </form>
+</body>
+</html>

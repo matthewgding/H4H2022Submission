@@ -1,0 +1,31 @@
+<!-- Implemented by Donal Pradeep -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <title>How to become a US citizen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Citizenship through Acquisition</h1>
+    <h4>A child may acquire citizenship automatically if born outside the United States if a parent was a U.S. citizen at the time of the child's birth.</h4>
+    Both parents were U.S. citizens at the time of the child’s birth:
+    <li>Parents were married at the time of child’s birth.</li>
+    <li>At least one parent lived in the U.S., or its territories, or both, prior to child’s birth.</li>
+    <br>One parent was a U.S. citizen at the time of the child’s birth:
+    <li>If child was born on or after November 14, 1986:
+        <ul>
+            <li>Parents were married at the time of birth.</li>
+            <li>Parent with U.S. citizenship lived in the U.S. or its territories for at least 5 years prior to child’s birth (2 of those 5 years should be after the parent’s 14th birthday).</li>
+        </ul>
+    </li>
+    <li>If child was born before November 14, 1986, but after October 10, 1952:
+        <ul>
+            <li>Parents were married at the time of birth.</li>
+            <li>Parent with U.S. citizenship lived in the U.S. or its territories for at least 10 years prior to child’s birth (5 of those 10 years should be after the parent’s 14th birthday).</li>
+        </ul>
+    </li>
+    <a href="https://www.uscis.gov/n-600" target="_blank">You should file the following: Form N-600, Application for Certificate of Citizenship.</a>
+</body>
+{% endblock %}

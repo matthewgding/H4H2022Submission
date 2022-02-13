@@ -1,0 +1,22 @@
+<!--February 12, 2021. Edmund Allen, eballen@scu.edu
+html file for the Resource page. -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}"> <!--takes style.css html format-->
+    <title>NaturalizeMe!</title>
+</head>
+    <h1>{% block title %} These are resources. Use them! {% endblock %}</h1>
+    <p>Did our state-of-the-art <a href="http://127.0.0.1:5000/eligibility">Eligibility Calculator</a> deem you ineligible for naturalization? <!--hotlink to eligibility calculator, in case user skipped it.-->
+        Never fear! We've listed resources here to help you in your journey to becoming a citizen of the United States.</p>
+    <hr>
+    <p>Looking to consult with an immigration lawyer? Consider <a href="https://community-lawyers.org/services/#immigration" target="_blank"> Community Lawyers</a>, available at +1(310) 635-8181</p>
+    <!--MORE TO BE ADDED HERE-->
+    <p>Need help understanding the general process of naturalization? The ins and outs, the dos and don'ts?</p>
+    <p><a href="http://127.0.0.1:5000/acquisition">Acquisition</a><br></p>
+    <p><a href="http://127.0.0.1:5000/derivation">Derivation</a><br></p>
+    <p><a href="http://127.0.0.1:5000/naturalization">Naturalization</a><br></p>
+{% endblock %}

@@ -1,0 +1,27 @@
+<!--February 12, 2021. Edmund Allen, eballen@scu.edu
+html file for the Home page.-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}"> <!--imports the css file, gives text style-->
+    <title>NaturalizeMe!</title>
+</head>
+<body>
+    <br>
+    <h1>{% block title %} Welcome to our Naturalization Eligibility Calculator! {% endblock %}</h1>
+    <br>
+    <p1 style="text-align: center;">Our robust survey will help YOU determine if you're on the right track to
+        proceed with the government's naturalization process. If you don't pass, fear not!
+        We have <a href="http://127.0.0.1:5000/resources">resources</a> to help get you on the right track!</p1>
+    <br>
+    <br>
+    <h1>Immigration Eligibility Calculator</h1>
+    <p2>Answer the following questions to the best of your knowledge.
+        To allow us to best aid you with your naturalization endeavor, it's best that you answer honestly.</p2>
+    <p3>Access the <strong>Eligibility Calculator</strong> <a href="http://127.0.0.1:5000/calcPage1">here</a>.</p3>
+    <br>
+</body>
+{% endblock %}

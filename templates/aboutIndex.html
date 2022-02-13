@@ -1,0 +1,59 @@
+<!--February 12, 2021. Edmund Allen, eballen@scu.edu
+html file for the About Us. -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+
+    <title>NaturalizeMe!</title>
+</head>
+       <!--bios of team; alternates which side bio/picture is on-->
+    <!--FIX: make it scale with resizing-->
+<h1>About the Team</h1>
+<div class="row">
+<div class="col">
+<img src="../static/images/matthew.JPG">
+</div>
+<div class="col" style="float:left;width:900px">
+<h2>Matthew</h2>
+Hi, I'm Matthew! I am a COEN major who just absolutely loves backend development. I was inspired by this project because
+of the work I do at my church; it is unfortunate that it can be so difficult for some people to live where they want to</div>
+</div>
+<br><br>
+
+<div class="row">
+<div class="col" style="width:720px;float:left";>
+<h2>Edmund</h2>
+Hello! My name is Edmund Allen. Throughout the course of this project I focused primarily on backend developoment and coordination
+    of my teammates. In my free time, I love spending time with my family and participating the SCU's orchestra, where I am
+    the principle violist.
+</div>
+<div class="col" style="float:right;"> <img src="../static/images/edmund.jpeg"></div>
+</div>
+
+<br>
+<div class="row" >
+<div class="col" style="float:left;">
+<img src="../static/images/ethan.jpeg">
+</div>
+<div class="col" style="float:right;width:72%">
+<h2>Ethan</h2>
+I'm Ethan, nice to meet you too! It has been a long time since I worked on frontend development for anything, so this project
+was extremely challenging. Outside of coding and school, I am an avid chess player and violinist, as well as a film buff.
+I was drawn to Naturalize Me because it reminded me of the stories my parents told me about them immigrating to the states
+and the difficulties they had navigating the foreign legal system. </div>
+</div>
+<br>
+
+<div class="row">
+<div class="col" style="width:72%;float:left">
+<h2>Donal</h2>
+Hello! Perhaps the most fun thing I can share about myself is this: I was born and raised in Ireland, and now, I speak with
+    a completely standard pacific western accent with the sole exception of when I say the word "Ireland."
+</div>
+<div class="col" style="float:right;"> <img src="../static/images/donal.JPG"></div>
+</div>
+{% endblock %}

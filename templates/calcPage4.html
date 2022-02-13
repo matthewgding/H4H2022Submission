@@ -1,0 +1,51 @@
+<!-- Implemented by Matthew Ding -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Citizenship Eligibility Calculator</title>
+</head>
+<body>
+    <!-- Create radio buttons to allow a user to confirm their status for each requirement -->
+    <form action="/calcPage4" method="post" style="text-align: center;">
+        <p>Are you a person of good moral character?</p>
+        <label><input type="radio" name="moral" value="yes"/>Yes</label>
+        <label><input type="radio" name="moral" value="no"/>No</label>
+
+        <p>Do any of the following descriptions apply to you?</p>
+        <p>(a) You are a female</p>
+        <p>(b) You are a male registered with the Selective Service</p>
+        <p>(c) You are a male who did not enter the United States under any status until after your 26th birthday</p>
+        <p>(d) You are a male who was in the United States between the ages of 18 and 26, not registered with the
+            Selective Service, and will send a letter explaining why</p>
+        <p>(e) You are a male who was in the United States between the ages of 18 and 26 as a lawful non-immigrant</p>
+        <label><input type="radio" name="description" value="yes"/>Yes</label>
+        <label><input type="radio" name="description" value="no"/>No</label>
+
+        <p>Have you ever deserted from the U.S. Armed Forces?</p>
+        <label><input type="radio" name="deserted" value="yes"/>Yes</label>
+        <label><input type="radio" name="deserted" value="no"/>No</label>
+
+        <p>Have you ever received an exemption or discharge from the U.S. Armed Forces for being an alien?</p>
+        <label><input type="radio" name="discharged" value="yes"/>Yes</label>
+        <label><input type="radio" name="discharged" value="no"/>No</label>
+
+        <p>Are you willing to perform either military or civilian service for the U.S. if required by law?</p>
+        <label><input type="radio" name="service" value="yes"/>Yes</label>
+        <label><input type="radio" name="service" value="no"/>No</label>
+
+        <p>Will you support the Constitution of the United States?</p>
+        <label><input type="radio" name="constitution" value="yes"/>Yes</label>
+        <label><input type="radio" name="constitution" value="no"/>No</label>
+
+        <p>Will you pledge allegiance to the United States?</p>
+        <label><input type="radio" name="allegiance" value="yes"/>Yes</label>
+        <label><input type="radio" name="allegiance" value="no"/>No</label>
+
+        <!-- Button to submit all choices for this page -->
+        <p></p>
+        <input type="submit" id="button1" name="next" value="Next">
+    </form>
+</body>
+</html>
